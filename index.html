@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>BHILAI TRIP</title>
+</head>
+<body>
+    <h1>WELCOME TO IIT BHILAI'S TRIP</h1>
+    <p>We welcome you to trip.<br> Kindly fill your details</p>
+    <div class="container" id="dem">
+    <form> 
+       <label for="name"> Enter your name </label> <br>
+       <input type="text" id="name" name="name" placeholder="name"><br>
+       <label for="id_no"> Enter your ID number </label><br>
+       <input type="text" id="id_no" name="id_no" placeholder="ID"><br>
+       <label for="age"> Enter your age</label><br>
+       <input type="number" id="age" name="age" placeholder="age"><br>
+       <label for="email"> Enter your email </label><br>
+       <input type="email" id="email" name="email" placeholder="email"><br>
+       <label for="phone"> Enter your phone number </label><br>
+       <input type="phone" id="phone" name="phone" placeholder="phone number"><br>
+   
+       <button type="button" class="btn "  onclick="loaddoc()" >Submit</button> 
+    </form>
+
+
+</div>
+
+<!-- <script> 
+function loaddoc() {
+ var xhttp= new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if(this.readyState== 4 && this.status== 200 ){
+    document.getElementById("dem").innerHTML= this.resposeText;
+  }
+};
+  xhttp.open('GET', "ajax_info.txt", true);
+  xhttp.send();
+
+  }
+    
+    
+    </script> -->
+</body>
+</html>
